@@ -34,12 +34,12 @@ nav {
 .links li {
   list-style: none;
 }
-.options-selecter {
+.options-selector {
   display: none;
   cursor: pointer;
 }
 
-.options-selecter div {
+.options-selector div {
   width: 25px;
   height: 5px;
   background-color: rgb(202, 202, 202);
@@ -72,11 +72,23 @@ nav {
   .links li {
     opacity: 0;
   }
-  .options-selecter {
+  .options-selector {
     display: block;
   }
 }
 
 .nav-active {
   transform: translateX(0%);
+}
+
+@keyframes navFade {
+  from{
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  
 }
