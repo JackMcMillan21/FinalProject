@@ -43,7 +43,7 @@ nav {
 
   div {
     width: 25px;
-    height: 5px;
+    height: 3px;
     background-color: rgb(202, 202, 202);
     margin: 5px;
     transition: all 0.3s ease;
@@ -97,12 +97,12 @@ nav {
     transform: translateX(0px);
   }
 }
-.toggle .line1{
+.toggle .line-1{
 transform: rotate(-45deg) translate(-5px,6px);
 }
-.toggle .line2{
+.toggle .line-2{
   opacity: 0;
 }
-.toggle .line3{
+.toggle .line-3{
   transform: rotate(45deg) translate(-5px,-6px);
 }

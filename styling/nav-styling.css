@@ -54,9 +54,11 @@ nav {
 
 .options-selector div {
   width: 25px;
-  height: 5px;
+  height: 3px;
   background-color: #cacaca;
   margin: 5px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 @media screen and (max-width: 1024px) {
@@ -130,4 +132,18 @@ nav {
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
   }
+}
+
+.toggle .line-1 {
+  -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+          transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line-2 {
+  opacity: 0;
+}
+
+.toggle .line-3 {
+  -webkit-transform: rotate(45deg) translate(-5px, -6px);
+          transform: rotate(45deg) translate(-5px, -6px);
 }
