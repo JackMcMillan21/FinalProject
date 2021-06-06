@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="../styling/nav-styling.css" />
+    <link rel="stylesheet" type="text/css" href="../styling/contact-us.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header></header>
+    <script src="../javascript/nav.js"></script>
+    <main>
+        <!-- This portion of code is just a container that holds of the content -->
+        <div id="container">
+            <!-- This portion of code is just text that displays above the two containers -->
+            <div id="top-text">
+            <h2>Connect With Us</h2>
+            <p>We would love to hear from you with anything you may need, whether it be relating to the layout of the website or to
+            book a meeting to set up an investigation into whatever you are inquiring about. Please be aware that we are located
+            along the west coast so we follow the PTZ timezone.
+            </p>
+            </div>
+            <!-- This portion of code is used to hold the two containers -->
+            <div id="contact-box">
+                <!-- This portion of code is a container on the left hand side that holds the content-->
+                <div id="contact-left">
+                    <h3>Sent your request</h3>
+                    <!-- This portion of code is is used to hold all of the form data and the inputs including the labels -->
+                    <form>
+                        <!-- This portion of code is used for input of someones name in a text box -->
+                        <div id="input-row">
+                            <div id="input-group">
+                                <label>Name</label>
+                                <input type="text" placeholder="John doe">
+                            </div>
+                            <!-- This portion of code is used for input of someones phone number in a text box -->
+                            <div id="input-group">
+                                <label>Phone</label>
+                                <input type="text" placeholder="+1 204-999-9999">
+                            </div>
+                        </div>
+                        <!-- This portion of code is used for input of someones email in a text box -->
+                        <div id="input-row">
+                            <div id="input-group">
+                                <label>Email</label>
+                                <input type="email" placeholder="Johndoe21@example.ca">
+                            </div>
+                            <!-- This portion of code is used for input of someones subject of the reason there are contacting in a text box -->
+                            <div id="input-group">
+                                <label>Subject</label>
+                                <input type="text" placeholder="Possible Changes">
+                            </div>
+                        </div>
+                        <!-- This portion of code is used for someone to write up comments based on the website -->
+                        <div id="message-center">
+                            <label>Message</label>
+                            <textarea rows="5" placeholder="Your Message"></textarea>
+
+                            <button type="submit">Send</button>
+                        </div>
+                    </form>
+                </div>
+                <!-- This portion of code includes a container on the right side of the screen that includes a table which is  contact information-->
+                <div id="contact-right">
+                    <h3>Reach Me</h3>
+
+                    <table>
+                        <tr>
+                            <td>Email:</td>
+                            <td>ptec@pembinatrails.ca</td>
+                        </tr>
+                        <tr>
+                            <td>Phone:</td>
+                            <td>+1 204-560-1999</td>
+                        </tr>
+                        <tr>
+                            <td>Address:</td>
+                            <td>#100 Innovation Drive (Smart Park)<br>
+                                Suite 250, Winnipeg, MB</td>
+                        </tr>
+
+                    </table>
+
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+</html>

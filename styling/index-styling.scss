@@ -1,3 +1,31 @@
 body{
-    background-color: black;
+    background-color: #232b2b;
+}
+#main-background{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:url(../images/home-background-image.PNG);
+    height:680px;
+    width:100vw;
+    margin-left:-10px;
+    margin-top: 16px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    min-height: 680px;
+}
+#background-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#content-container{
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
+    height: 1000px;
+    background-color: #141514;
 }

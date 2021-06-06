@@ -15,7 +15,7 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   min-height: 8vh;
-  background-color: bisque;
+  background-color: #141514;
   font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -76,7 +76,7 @@ nav {
     right: 0px;
     height: 92vh;
     top: 8vh;
-    background-color: bisque;
+    background-color: #141514;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -94,6 +94,7 @@ nav {
     transition: -webkit-transform 0.5s ease-in;
     transition: transform 0.5s ease-in;
     transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+    z-index: 2;
   }
   .links li {
     opacity: 0;
@@ -134,16 +135,16 @@ nav {
   }
 }
 
-.toggle .line-1 {
+#toggle .line-1 {
   -webkit-transform: rotate(-45deg) translate(-5px, 6px);
           transform: rotate(-45deg) translate(-5px, 6px);
 }
 
-.toggle .line-2 {
+#toggle .line-2 {
   opacity: 0;
 }
 
-.toggle .line-3 {
+#toggle .line-3 {
   -webkit-transform: rotate(45deg) translate(-5px, -6px);
           transform: rotate(45deg) translate(-5px, -6px);
 }
