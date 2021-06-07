@@ -19,10 +19,10 @@ main {
 #container {
   display: flex;
   flex-direction: column;
-  margin-top: 3.5%; 
+  margin-top: 3.5%;
   width: 80%;
   margin: 50px, auto;
-  zoom: 1.5; 
+  zoom: 1.5;
   height: auto;
   p {
     margin-bottom: 10px;
@@ -123,8 +123,10 @@ tr {
   }
 
   td {
+    float: left;
     padding-top: 20px;
     color: #cacaca;
+    letter-spacing: 0.5px;
   }
 }
 
@@ -145,5 +147,22 @@ tr {
   }
 }
 @media screen and (max-width: 768px) {
-  
+  #contact-box {
+    background: #414a4c;
+    display: flex;
+    flex-direction: column;
+  }
+  #contact-left {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  td {
+    font-size: smaller;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #contact-left {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
 }
