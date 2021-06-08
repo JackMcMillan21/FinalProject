@@ -50,8 +50,9 @@ main h2 {
 }
 
 #contact-left {
-  -ms-flex-preferred-size: 60%;
-      flex-basis: 60%;
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
   padding: 40px 60px;
   background-color: #141514;
 }
@@ -73,8 +74,9 @@ main h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-preferred-size: 60%;
-      flex-basis: 60%;
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
   padding: 40px;
   background: #414a4c;
   color: #cacaca;
@@ -163,6 +165,10 @@ button {
   margin-top: 10px;
 }
 
+tr {
+  font-size: 1vw;
+}
+
 tr td:first-child {
   padding-right: 20px;
 }
@@ -172,6 +178,8 @@ tr td {
   padding-top: 20px;
   color: #cacaca;
   letter-spacing: 0.5px;
+  word-break: break-all;
+  font-size: calc(20px + 24px * ((100vw - 320px) / 680));
 }
 
 #message-center {
@@ -206,7 +214,7 @@ tr td {
   margin-bottom: 10px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1040px) {
   #contact-box {
     background: #414a4c;
     display: -webkit-box;
@@ -222,13 +230,6 @@ tr td {
     padding-right: 5%;
   }
   td {
-    font-size: smaller;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  #contact-left {
-    padding-left: 5%;
-    padding-right: 5%;
+    font-size: 2vw;
   }
 }

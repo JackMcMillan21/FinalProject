@@ -35,7 +35,7 @@ main {
 }
 
 #contact-left {
-  flex-basis: 60%;
+  flex: 50%;
   padding: 40px 60px;
   background-color: rgb(20, 21, 20);
 
@@ -50,7 +50,7 @@ main {
   display: flex;
   align-items: center;
   flex-direction: column;
-  flex-basis: 60%;
+  flex: 50%;
   padding: 40px;
   background: #414a4c;
   color: #cacaca;
@@ -118,6 +118,7 @@ button {
 }
 
 tr {
+  font-size: 1vw;
   td:first-child {
     padding-right: 20px;
   }
@@ -127,6 +128,8 @@ tr {
     padding-top: 20px;
     color: #cacaca;
     letter-spacing: 0.5px;
+    word-break: break-all;
+    font-size: calc(20px + 24px * ((100vw - 320px) / 680));
   }
 }
 
@@ -146,7 +149,7 @@ tr {
     margin-bottom: 10px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1040px) {
   #contact-box {
     background: #414a4c;
     display: flex;
@@ -157,12 +160,6 @@ tr {
     padding-right: 5%;
   }
   td {
-    font-size: smaller;
-  }
-}
-@media screen and (max-width: 1024px) {
-  #contact-left {
-    padding-left: 5%;
-    padding-right: 5%;
+    font-size: 2vw;
   }
 }

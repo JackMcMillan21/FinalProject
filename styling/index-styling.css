@@ -91,15 +91,15 @@ body {
           align-items: flex-start;
   height: auto;
   width: auto;
+  margin-bottom: 10px;
 }
 
 #service-details p {
   color: #cacaca;
-  font-size: x-large;
+  font-size: larger;
   margin-left: 2%;
   margin-right: 2%;
   text-align: left;
-  font-size: large;
 }
 
 #service-details h3 {
