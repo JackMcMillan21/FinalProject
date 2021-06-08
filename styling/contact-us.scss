@@ -59,6 +59,14 @@ main {
     font-weight: 600;
     margin-bottom: 30px;
   }
+    p {
+    align-self: flex-start;
+    padding-top: 20px;
+    color: #cacaca;
+    letter-spacing: 0.5px;
+    word-break: break-all;
+    font-size: large;
+  }
 }
 
 #input-row {
@@ -117,21 +125,7 @@ button {
   margin-top: 10px;
 }
 
-tr {
-  font-size: 1vw;
-  td:first-child {
-    padding-right: 20px;
-  }
 
-  td {
-    float: left;
-    padding-top: 20px;
-    color: #cacaca;
-    letter-spacing: 0.5px;
-    word-break: break-all;
-    font-size: calc(20px + 24px * ((100vw - 320px) / 680));
-  }
-}
 
 #message-center {
   display: flex;

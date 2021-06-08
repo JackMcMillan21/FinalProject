@@ -8,7 +8,7 @@ body {
   align-items: center;
   background: url(../images/photo-2.PNG);
   height: 680px;
-  width: 99vw;
+  width: 99%;
   margin-left: -10px;
   margin-top: 16px;
   background-size: cover;
@@ -17,3 +17,27 @@ body {
   margin-left: 7px;
 }
 
+#background-text {
+  flex-direction: column;
+  text-align: center;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 70%;
+}
+
+#team-row {
+  width: 99%;
+  height: 250px;
+  background: #414a4c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    margin-left: 7px;
+
+  img {
+    height: 190px;
+    width: 190px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
