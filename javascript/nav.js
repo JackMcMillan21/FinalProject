@@ -7,14 +7,24 @@ headerElement.innerHTML = `
             <ul class="links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="meet-the-team.html">Meet The Team</a></li>
-                <li><a href="#">Contracting</a></li>
                 <li><a href="contact-us.html">Contact Us</a></li>
+                <li><a href="#">Language Selector</a></li>
             </ul>
+            <div class="dropdown">
+            <button class="dropbtn">Dropdown</button>
+            <div class="dropdown-content">
+           <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+           <a href="#">Link 3</a>
+           </div>
+            </div>
             <div class="options-selector">
                 <div class="line-1"></div>
                 <div class="line-2"></div>
                 <div class="line-3"></div>
             </div>
+            <div class="lang-menu">
+                <div class="selected-lang">
             </nav>`;
 
 // Followed video on youtube https://www.youtube.com/watch?v=gXkqy0b4M5g changed things as nessecary
@@ -36,8 +46,7 @@ const navSlide = () => {
       }
     });
     //options selector annimation
-    optionsSelector.classList.toggle('toggle');
-
+    optionsSelector.classList.toggle("toggle");
   });
 };
 
