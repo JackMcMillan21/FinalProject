@@ -21,3 +21,14 @@ body {
   min-height: 680px;
   margin-left: 10px;
 }
+
+#background-text {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 70%;
+}

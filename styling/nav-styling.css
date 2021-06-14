@@ -135,16 +135,16 @@ nav {
   }
 }
 
-#toggle .line-1 {
+.toggle .line-1 {
   -webkit-transform: rotate(-45deg) translate(-5px, 6px);
           transform: rotate(-45deg) translate(-5px, 6px);
 }
 
-#toggle .line-2 {
+.toggle .line-2 {
   opacity: 0;
 }
 
-#toggle .line-3 {
+.toggle .line-3 {
   -webkit-transform: rotate(45deg) translate(-5px, -6px);
           transform: rotate(45deg) translate(-5px, -6px);
 }
