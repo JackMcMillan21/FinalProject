@@ -1,6 +1,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 body {
@@ -83,7 +84,6 @@ body {
   text-align: center;
   font-weight: 900;
   color: #fff;
-  font-family: arial;
   position: relative;
   -webkit-transform: translateY(50%);
           transform: translateY(50%);
