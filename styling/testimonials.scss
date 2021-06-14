@@ -1,5 +1,13 @@
+@import "../styling/variables";
+
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 body {
-  background-color: #232b2b;
+  background-color: $main-black-background;
 }
 
 #main-background {
@@ -22,4 +30,65 @@ body {
   margin-left: 5px;
   margin-right: 5px;
   width: 42%;
+}
+
+#content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 96%;
+  height: auto;
+  padding-bottom: 15px;
+  zoom: 1.4;
+
+  .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .speech-bubble {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    font-weight: 900;
+    color: #fff;
+    font-family: arial;
+    position: relative;
+    transform: translateY(50%);
+    background-color: $greyish-background;
+    color:$text-color;  
+    font-size: 2.2vmin;
+  }
+
+  .sb1:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 10px solid $greyish-background;
+    border-right: 10px solid transparent;
+    border-top: 10px solid $greyish-background;
+    border-bottom: 10px solid transparent;
+    right: -19px;
+    top: 6px;
+  }
+
+  .sb2:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid $greyish-background;
+    border-top: 10px solid $greyish-background;
+    border-bottom: 10px solid transparent;
+    left: -19px;
+    top: 6px;
+  }
 }

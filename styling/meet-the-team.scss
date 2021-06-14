@@ -1,5 +1,7 @@
+@import "../styling/variables";
+
 body {
-  background-color: #232b2b;
+  background-color: $main-black-background;
 }
 
 #main-background {
@@ -28,7 +30,7 @@ body {
   margin-top: 38px;
   width: 96.5%;
   height: 250px;
-  background-color: #414a4c;
+  background-color: $greyish-background;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -164,8 +166,8 @@ transform: translate();
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #414a4c;
-  color: #cacaca;
+  background-color: $greyish-background;
+  color: $text-color;
   text-align: center;
   font-size: 1.5vmin;
   padding: 20px;

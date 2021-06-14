@@ -1,3 +1,8 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 body {
   background-color: #232b2b;
 }
@@ -31,4 +36,84 @@ body {
   margin-left: 5px;
   margin-right: 5px;
   width: 42%;
+}
+
+#content-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 96%;
+  height: auto;
+  padding-bottom: 15px;
+  zoom: 1.4;
+}
+
+#content-container .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+#content-container .speech-bubble {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+  font-weight: 900;
+  color: #fff;
+  font-family: arial;
+  position: relative;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  background-color: #414a4c;
+  color: #cacaca;
+  font-size: 2.2vmin;
+}
+
+#content-container .sb1:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid #414a4c;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #414a4c;
+  border-bottom: 10px solid transparent;
+  right: -19px;
+  top: 6px;
+}
+
+#content-container .sb2:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid #414a4c;
+  border-top: 10px solid #414a4c;
+  border-bottom: 10px solid transparent;
+  left: -19px;
+  top: 6px;
 }
