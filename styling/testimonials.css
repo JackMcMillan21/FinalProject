@@ -1,0 +1,23 @@
+body {
+  background-color: #232b2b;
+}
+
+#main-background {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(../images/testimonials.png);
+  height: 680px;
+  width: 99%;
+  margin-top: 16px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 680px;
+  margin-left: 10px;
+}

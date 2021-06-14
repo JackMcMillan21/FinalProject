@@ -7,7 +7,7 @@ headerElement.innerHTML = `
             <ul class="links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="meet-the-team.html">Meet The Team</a></li>
-                <li><a href="#">Testimonials</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
                 <li><a href="contact-us.html">Contact Us</a></li>
             </ul>
             </div>
