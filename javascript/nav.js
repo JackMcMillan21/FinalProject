@@ -7,16 +7,9 @@ headerElement.innerHTML = `
             <ul class="links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="meet-the-team.html">Meet The Team</a></li>
+                <li><a href="#">Testimonials</a></li>
                 <li><a href="contact-us.html">Contact Us</a></li>
-                <li><a href="#">Language Selector</a></li>
             </ul>
-            <div class="dropdown">
-            <button class="dropbtn">Dropdown</button>
-            <div class="dropdown-content">
-           <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-           <a href="#">Link 3</a>
-           </div>
             </div>
             <div class="options-selector">
                 <div class="line-1"></div>

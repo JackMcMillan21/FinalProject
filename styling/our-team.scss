@@ -34,12 +34,18 @@ body {
   justify-content: center;
   align-items: center;
   margin-left: 7px;
+  margin-bottom: 50px;
 
   img {
     height: 190px;
     width: 190px;
     margin-left: 10px;
     margin-right: 10px;
+  }
+
+  .team-member{
+    flex-direction: column;
+    text-align: center;
   }
 }
 
@@ -52,7 +58,10 @@ body {
 #body-container {
   width: 99%;
   height: auto;
-  zoom: 1.3;
+  zoom: 1.4;
+  h1{
+  text-align: center;
+  }
 }
 
 #resume-container {
@@ -61,37 +70,35 @@ body {
   align-items: center;
   flex-direction: column;
 }
-h1{
+h1 {
+transform: translate();
   font-size: 3vmin;
-  }
-.slider {
+}
+#slider {
   position: relative;
-  margin-top: 50px;
   width: 100%;
-  height: 30vh;
-  min-height: 33vw;
+  min-height: 45vh;
   animation: slide 20s infinite;
   background-position: bottom;
+  margin-top: 5px;
 }
 
-.slider-2 {
+#slider-2 {
   position: relative;
-  margin-top: 50px;
   width: 100%;
-  height: 30vh;
-  min-height: 33vw;
-  animation: slide 20s infinite;
+  min-height: 45vh;
+  animation: slide-2 20s infinite;
   background-position: bottom;
+  margin-top: 5px;
 }
 
-.slider-3 {
+#slider-3 {
   position: relative;
-  margin-top: 50px;
   width: 100%;
-  height: 30vh;
-  min-height: 33vw;
-  animation: slide 20s infinite;
+  min-height: 45vh;
+  animation: slide-3 20s infinite;
   background-position: bottom;
+  margin-top: 5px;
 }
 
 @keyframes slide {
@@ -195,5 +202,4 @@ h1{
 }
 
 @media screen and (max-width: 1024px) {
-
 }
