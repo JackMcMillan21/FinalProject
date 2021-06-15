@@ -1,5 +1,7 @@
+//importing all of the variables so that I can use them as values's on specific elements 
 @import "../styling/variables";
 
+// used to make everything have the same font
 * {
   font-family: Helvetica, Arial, sans-serif;
 }
@@ -7,6 +9,9 @@
 body {
   background-color: $main-black-background;
 }
+
+//styling the main div at the top of the page, so that it is center, has specific dimensions so there is white space surrounding it, and a minimum height that it cant get smaller then
+// I also set the background to cover and no repeat so that it stays the same size of the image it self and doesnt duplicate when it gets bigger then the dimensions specified
 #main-background {
   display: flex;
   justify-content: center;
@@ -20,6 +25,9 @@ body {
   min-height: 680px;
   margin-left: 10px;
 }
+
+//styling the text ontop of the photo above so that it is centered within the image and the heading is stacked ontop of one another. I also add a transparent background to increase
+// readability of the text on the specific background
 #background-text {
   display: flex;
   justify-content: center;
@@ -33,6 +41,7 @@ body {
   padding: 5px;
 }
 
+//container used to hold all of the content on the page, I set it to have a width of 96% so that there is still white space surrounding the container.
 #content-container {
   width: 96%;
   margin-left: 2%;
@@ -42,6 +51,8 @@ body {
   background-color: $greyish-background;
   padding-bottom: 15px;
 }
+
+//styling the top portion of information so that it looks diffrent then the text below becuase it is the main summary, I also center that text compared to the text below it which I dont
 #service-summary {
   display: flex;
   align-items: center;
@@ -60,6 +71,9 @@ body {
     color: $text-color;
   }
 }
+
+//styling the majority of content below the main summary so that is starts along the left side of the screen, and so that the containers holding the text stack on top of eachother
+// so there not all beside eachother and overlapping on the next line, 
 #service-details {
   display: flex;
   flex-direction: column;

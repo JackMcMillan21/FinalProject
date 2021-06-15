@@ -1,5 +1,7 @@
+// used to import the variables so I can use those values on this style sheet
 @import "../styling/variables";
 
+// used to make everything have the same font
 *{
   font-family: Helvetica, Arial, sans-serif;
 }
@@ -7,6 +9,7 @@
 body {
   background-color: $main-black-background;
 }
+// used to center and change the color of the text at the top of the page, uses display flex to center
 main {
   display: flex;
   justify-content: center;
@@ -21,7 +24,7 @@ main {
     color: $text-color;
   }
 }
-
+// container that is used to hold all of the content on the page including the text above the contact box, I also use the zoom function to scale it on the screen.
 #container {
   display: flex;
   flex-direction: column;
@@ -40,6 +43,7 @@ main {
   display: flex;
 }
 
+// this container is located on the left side of the entire contact box and uses the flex function to always take up a minimum of 50% of the total area
 #contact-left {
   flex: 50%;
   padding: 40px 60px;
@@ -52,6 +56,7 @@ main {
   }
 }
 
+// this container is the right container of the contact box and i use lots of fuctions to center it on the page, take up a minimum of 50% of the page and styling of the text, background etc.
 #contact-right {
   display: flex;
   align-items: center;
@@ -75,6 +80,7 @@ main {
   }
 }
 
+// styling of the a specific row in the left container so that all of the input boxed are spaced properly and that they take up a minimum of 45% of the page
 #input-row {
   display: flex;
   justify-content: space-between;
@@ -85,6 +91,7 @@ main {
   }
 }
 
+// styling the input boxes themselves so that they are styled a specific way, i also make sure to have enough room insdie of the input box using padding.
 input {
   width: 100%;
   border: none;
@@ -104,6 +111,7 @@ label {
   color: $text-color;
 }
 
+// changing the color of the placeholder inside of the input boxes so that it matches the color of the text when people type
 ::placeholder {
   color: #fff;
   font-size: x-small;
@@ -120,6 +128,7 @@ textarea {
   font-size: x-small;
 }
 
+//styling the button so it has specific looks styling, like making the border radius 30px which makes the button a circle instead of a square
 button {
   background: $greyish-background;
   width: 100px;
@@ -132,12 +141,13 @@ button {
 }
 
 
-
+//making the message center container stack on top of eachother using flex direction column 
 #message-center {
   display: flex;
   flex-direction: column;
 }
 
+// styling for the text at the top of the screen so that it is centered and so that the heading stacks ontop of the paragraph text. 
 #top-text {
   display: flex;
   justify-content: center;
@@ -148,6 +158,8 @@ button {
   h2 {
     margin-bottom: 10px;
   }
+
+  // media query so that when the screen reaches a specific size the left contact box stacks ontop of the right contact box so it is easier to see on a phone screen.
 }
 @media screen and (max-width: 1040px) {
   #contact-box {
@@ -158,8 +170,5 @@ button {
   #contact-left {
     padding-left: 5%;
     padding-right: 5%;
-  }
-  td {
-    font-size: 2vw;
   }
 }

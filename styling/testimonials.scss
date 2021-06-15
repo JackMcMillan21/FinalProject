@@ -1,5 +1,7 @@
+//importing all of the variables so that I can use them as values's on specific elements 
 @import "../styling/variables";
 
+// used to make everything have the same font and have margin and padding of 0px
 * {
   margin: 0px;
   padding: 0px;
@@ -10,6 +12,8 @@ body {
   background-color: $main-black-background;
 }
 
+//styling the main div at the top of the page, so that it is center, has specific dimensions so there is white space surrounding it, and a minimum height that it cant get smaller then
+// I also set the background to cover and no repeat so that it stays the same size of the image it self and doesnt duplicate when it gets bigger then the dimensions specified
 #main-background {
   display: flex;
   justify-content: center;
@@ -24,6 +28,8 @@ body {
   margin-left: 10px;
 }
 
+//styling the text ontop of the photo above so that it is centered within the image and the heading is stacked ontop of one another. I also add a transparent background to increase
+// readability of the text on the specific background
 #background-text {
   flex-direction: column;
   text-align: center;
@@ -34,6 +40,7 @@ body {
   padding: 5px;
 }
 
+//this is used to center all of the content within the container and also have the content stack ontop of eachother. I also zoom  in to make the contetn bigger and more visable
 #content-container {
   display: flex;
   justify-content: center;
@@ -44,6 +51,7 @@ body {
   padding-bottom: 15px;
   zoom: 1.4;
 
+  //this styling is used to put the div container beside the images by making the flex direction row
   .box {
     display: flex;
     justify-content: center;
@@ -53,6 +61,7 @@ body {
     margin-bottom: 5%;
   }
 
+  //this styling is used set the dimmensions of the speech buuble and to transform 
   .speech-bubble {
     max-width: 700px;
     margin: 50px auto;
@@ -66,7 +75,7 @@ body {
     color: $text-color;
     font-size: 2.2vmin;
   }
-
+//styling used to have the triangle on the right hand side of the box making a speech bubble 
   .sb1:before {
     content: "";
     width: 0px;
@@ -79,7 +88,7 @@ body {
     right: -19px;
     top: 6px;
   }
-
+//styling used to have the triangle on the left hand side of the box making a speech bubble 
   .sb2:before {
     content: "";
     width: 0px;

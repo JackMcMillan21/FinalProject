@@ -1,10 +1,11 @@
+//importing all of the variables so that I can use them as values's on specific elements 
 @import "../styling/variables";
 
-
+//used to make it when you click the image and it takes you to a diffrent portion of the page you it doesnt jump there but transition there by scrolling down on its own
 html {
   scroll-behavior: smooth;
 }
-
+// used to make everything have the same font
 * {
   font-family: Helvetica, Arial, sans-serif;
 }
@@ -12,7 +13,8 @@ html {
 body {
   background-color: $main-black-background;
 }
-
+//styling the main div at the top of the page, so that it is center, has specific dimensions so there is white space surrounding it, and a minimum height that it cant get smaller then
+// I also set the background to cover and no repeat so that it stays the same size of the image it self and doesnt duplicate when it gets bigger then the dimensions specified
 #main-background {
   display: flex;
   justify-content: center;
@@ -26,7 +28,8 @@ body {
   min-height: 680px;
   margin-left: 10px;
 }
-
+//styling the text ontop of the photo above so that it is centered within the image and the heading is stacked ontop of one another. I also add a transparent background to increase
+// readability of the text on the specific background
 #background-text {
   flex-direction: column;
   text-align: center;
@@ -38,6 +41,7 @@ body {
   padding: 5px;
 }
 
+//styling the team row so that all of the images in it sit beside eachother instead of ontop, also making the width 96% so that there is still white space surrounding the container
 #team-row {
   margin-top: 38px;
   width: 96.5%;
@@ -55,13 +59,14 @@ body {
     margin-left: 10px;
     margin-right: 10px;
   }
-
+//here I make the flex direction column so that the text that is inside the same container as the image can be stacked ontop of the image and act as a label
   .team-member {
     flex-direction: column;
     text-align: center;
   }
 }
 
+//making all of the content within the main container centered within the page and is all on top of one another instead beside.
 #main-container {
   display: flex;
   align-items: center;
@@ -69,6 +74,7 @@ body {
   color: $text-color;
 }
 
+// zooming in the body content so it takes up more of the page and is more visable
 #body-container {
   width: 99%;
   height: auto;
@@ -77,17 +83,8 @@ body {
     text-align: center;
   }
 }
-
-#resume-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  h1 {
-    transform: translate();
-    font-size: 3vmin;
-  }
-}
+//the container for the slideshow that is constantly playing through the resume images and i also set the background to position to bottom because it centers it within the container
+//i also set the animation to be 20 seconds long be infinite so it will restart and infinite amount of times
 #slider {
   position: relative;
   width: 100%;
@@ -96,7 +93,7 @@ body {
   background-position: bottom;
   margin-top: 5px;
 }
-
+// see comment for slider 1 ^^
 #slider-2 {
   position: relative;
   width: 100%;
@@ -105,7 +102,7 @@ body {
   background-position: bottom;
   margin-top: 5px;
 }
-
+// see comment for slider 1 ^^
 #slider-3 {
   position: relative;
   width: 100%;
@@ -115,6 +112,7 @@ body {
   margin-top: 5px;
 }
 
+//animation of the slide show so that every quarter of the animation it changes the background image
 @keyframes slide {
   0% {
     background-image: url(../images/cara-resume-1.PNG);
@@ -138,6 +136,7 @@ body {
   }
 }
 
+//animation of the slide show so that every quarter of the animation it changes the background image
 @keyframes slide-2 {
   0% {
     background-image: url(../images/craig-resume-2.PNG);
@@ -160,7 +159,7 @@ body {
     background-size: contain;
   }
 }
-
+//animation of the slide show so that every quarter of the animation it changes the background image
 @keyframes slide-3 {
   0% {
     background-image: url(../images/jack-resume-1.PNG);
@@ -173,7 +172,8 @@ body {
     background-size: contain;
   }
 }
-
+//this portion of code is used to make a button below the image that would normally take you to the resume. Right now I have it set up so that if you hover over the button a 
+//transition occurs and a arrow appears on the left side of the button.
 .button {
   display: inline-block;
   position: relative;
@@ -190,6 +190,7 @@ body {
   margin-bottom: 75px;
 }
 
+// this portion of code is used to that the arrow appears in the middle of the button on the y axis and to the right of the text
 .button span {
   cursor: pointer;
   display: inline-block;
@@ -197,6 +198,7 @@ body {
   transition: 0.5s;
 }
 
+// This portion of code us used to make the arrow itself appear and so that after you stop hovering it goes back to normal
 .button span:after {
   content: "\00bb";
   position: absolute;
@@ -206,14 +208,13 @@ body {
   transition: 0.5s;
 }
 
+//this is used so that when you hover the box extends 25px so that there is room for the arrow to appear
 .button:hover span {
   padding-right: 25px;
 }
 
+//this is used so that when you are done hovering over the button the arrows opacity becomes 1 and you cant see it anymore
 .button:hover span:after {
   opacity: 1;
   right: 0;
-}
-
-@media screen and (max-width: 1024px) {
 }

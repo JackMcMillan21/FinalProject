@@ -1,5 +1,7 @@
+//importing all of the variables so that I can use them as values's on specific elements 
 @import "../styling/variables";
 
+//styling so that everything has no defualt margin or padding and that the font family is the same so there are no inconsistancy's
 * {
   margin: 0px;
   padding: 0px;
@@ -7,6 +9,7 @@
   font-family: Helvetica, Arial, sans-serif;
 }
 
+//styling used to center the nav content and so that the nav cant get smaller then 8vh
 nav {
   display: flex;
   justify-content: space-around;
@@ -15,43 +18,51 @@ nav {
   background-color: $nav-black-color;
   font-family: Helvetica, Arial, sans-serif;
 }
-
+//making eachword uppercase
 .main-title {
   color: $text-color;
   text-transform: uppercase;
   letter-spacing: 5px;
   font-size: 22px;
 }
+
+//making the links have space around them so there not crowded and they take up 40% of the nav bar
 .links {
   display: flex;
   justify-content: space-around;
   width: 40%;
 
+  //styling the text of the anchors
   a {
     color: $text-color;
     text-decoration: none;
     letter-spacing: 3px;
     font-weight: bold;
     font-size: 14px;
-margin-left: 3px;
+    margin-left: 3px;
   }
+  //removing the bullet points
   li {
     list-style: none;
   }
+  //making it so when you hover over the anchor it changes the text and background color to tell you are hovering over it
     :hover {
     color: black;
     background-color: whitesmoke;
   }
+  //making it so when you focus the anchor it changes the text and background color to tell you are hovering over it
   :focus {
     color: black;
     background-color: whitesmoke;
   }
 }
 
+//making the options selector not visable untill later requirments are met and making it so that when you hover over it your cursor shows selectable
 .options-selector {
   display: none;
   cursor: pointer;
 
+  //dimensions of the options selector and shows the transition duration of it turning into an x untill later requirments
   div {
     width: 25px;
     height: 3px;
@@ -61,12 +72,15 @@ margin-left: 3px;
   }
 }
 
+//media query so that when the width is 1024 the nav links become closer together 
 @media screen and (max-width: 1024px) {
   .links {
     width: 60%;
   }
 }
 
+//media query so that when the width becomes 768 the options selector shows up in the top right hand corner and the nav links disseapear from the heading
+//this styling all defines the dimensions of the new nav that will be displayed when clicking the options selector in the top right hand corner
 @media screen and (max-width: 768px) {
   body {
     overflow-x: hidden;
@@ -99,6 +113,7 @@ margin-left: 3px;
   transform: translateX(0%);
 }
 
+//this animation is used to show the fade in of the nav options when you click the options selector in the top right hand corner, over the 5s it goes from opacity 0-1 so that it is visable
 @keyframes navFade {
   from {
     opacity: 0;
@@ -109,6 +124,8 @@ margin-left: 3px;
     transform: translateX(0px);
   }
 }
+
+//this styling is used to show the transformation of the options selector into the x by making the middle line invisable and the other 2 lines make an x
 .toggle .line-1{
 transform: rotate(-45deg) translate(-5px,6px);
 }
