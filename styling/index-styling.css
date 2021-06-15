@@ -44,6 +44,8 @@ body {
   margin-left: 5px;
   margin-right: 5px;
   width: 42%;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 5px;
 }
 
 #content-container {
@@ -77,6 +79,7 @@ body {
   margin-left: 2%;
   margin-right: 2%;
   text-align: center;
+  line-height: 140%;
 }
 
 #service-summary h1 {
@@ -105,6 +108,7 @@ body {
   margin-left: 2%;
   margin-right: 2%;
   text-align: left;
+  line-height: 140%;
 }
 
 #service-details h3 {

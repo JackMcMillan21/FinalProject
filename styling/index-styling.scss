@@ -29,6 +29,8 @@ body {
   margin-left: 5px;
   margin-right: 5px;
   width: 42%;
+  background-color: rgba(0,0,0,0.3);
+  padding: 5px;
 }
 
 #content-container {
@@ -46,13 +48,13 @@ body {
   flex-direction: column;
   height: auto;
   width: auto;
-
   p {
     color: $text-color;
     font-size: x-large;
     margin-left: 2%;
     margin-right: 2%;
     text-align: center;
+    line-height: 140%;
   }
   h1 {
     color: $text-color;
@@ -71,6 +73,7 @@ body {
     margin-left: 2%;
     margin-right: 2%;
     text-align: left;
+    line-height: 140%;
   }
   h3 {
     color: $text-color;

@@ -1,6 +1,11 @@
 @import "../styling/variables";
 
-*{
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
   font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -27,8 +32,10 @@ body {
   text-align: center;
   margin-left: 5px;
   margin-right: 5px;
-  width: 42%;
-  color:black
+  width: 70%;
+  color: black;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 5px;
 }
 
 #team-row {
@@ -49,7 +56,7 @@ body {
     margin-right: 10px;
   }
 
-  .team-member{
+  .team-member {
     flex-direction: column;
     text-align: center;
   }
@@ -59,15 +66,15 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  color:$text-color;
+  color: $text-color;
 }
 
 #body-container {
   width: 99%;
   height: auto;
   zoom: 1.4;
-  h1{
-  text-align: center;
+  h1 {
+    text-align: center;
   }
 }
 
@@ -76,10 +83,10 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-h1 {
-transform: translate();
-  font-size: 3vmin;
+  h1 {
+    transform: translate();
+    font-size: 3vmin;
+  }
 }
 #slider {
   position: relative;
